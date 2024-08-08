@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .search-bar{
+        width: 550px;
+      }
+      .search-btn{
+        display: flex;
+        
+        
+        
+        background-color:  #fe424d;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding-top:7px;
+
+      }
+      .search-btn:hover{
+        background-color:  #fe424d;
+
+      }
+      .search-inp{
+        padding: 0.5rem 1rem 0.5rem 9rem;
+        border-radius: 25px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-expand-sm bg-body-light sticky-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><i class="fa-regular fa-compass"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              
+              <a class="nav-link" href="/listing">explore</a>
+             
+              
+              
+            </div>
+            <div class="navbar-nav ms-auto">
+              <div class="container-fluid search-bar ">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 search-inp" type="search" placeholder="Search Destination" aria-label="Search">
+                  <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>  
+            
+            
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link " href="/listing/new">add new listing</a>
+              <% if(!currUser){%> 
+              <a class="nav-link " aria-current="page" href="/signup"><b>signup</b></a>
+              <a class="nav-link" href="/login"><b>login</b></a>
+              <% } %>
+              <% if(currUser){%> 
+              <a class="nav-link" href="/logout"><b>logout</b></a>
+              <% } %>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<%layout("layouts/boilerplate")-%>
+<body>
+    <div class="row col-lg-6 offset-lg-3 col-md-11 col-sm-11 mt-3">
+
+        <form action="/login" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label"> username</label>    
+                <input name="username" type="text"class="form-control" required>
+                <div class="valid-feedback">looks good!</div>
+               </div>
+               
+               <div class="mb-3">
+                <label for="password" class="form-label"> password</label>    
+                <input name="password" type="password"class="form-control" required>
+                <div class="valid-feedback">looks good!</div>
+               </div>
+               <div >
+                <a href="/forget">forget password</a>
+                <a style="margin-left: 1rem;">reset password</a>
+               </div>
+               <br>
+               
+
+               <button class="btn btn-success">submit</button>
+
+               
+
+        </form>  
+    </div>
+
+
+
+
+
+
+</body>

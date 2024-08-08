@@ -1,0 +1,120 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+
+    
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    background-color: #fff;
+    height: 5rem;
+    
+
+}
+.nav-link{
+    color: #222222 !important;
+}
+ .fa-compass{
+    color: #fe424d ;
+    font-size: 2rem;
+}
+.listing-card{
+    
+    border: none !important;
+    margin-bottom: 2rem;
+    
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+
+.card-text p{
+    font-weight: 400 !important;
+    
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #fff;
+}
+.card-link {
+    text-decoration: none;
+}
+.f-info{
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+    background-color: #ebebeb;
+}
+
+.company-social{
+    font-size: 1.2rem;
+}
+.company-social i{
+    margin-right: 1rem;
+}
+.company-social,.company-text,company-term{
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+}
+.company-term a{
+    text-decoration: none;
+    color: #222222;
+}
+.company-term :hover{
+    text-decoration: underline;
+
+}
+.btn-dark{
+     background-color: #fe424d !important ;
+    border: none !important;
+}
+.show-btn{
+    display: flex;
+}
+.btns{
+    background-color: #222222 !important;
+}
+.show-image{
+    height: 30vh;
+}
+
+.data-bs-target{
+    background-color: #222222;
+}
+.navbar{
+    background-color: #fff !important;
+}
+
+@media (max-width: 400px
+) {
+    .delete-btn{
+        margin-left: 1rem !important; 
+
+    }
+
+    
+}
+#map{
+    width: 100vh;
+    height: 350px;
+    margin-bottom: 1rem;
+}
+    
